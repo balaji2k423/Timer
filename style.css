@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  }
+  
+  .container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    width: 450px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  #display {
+    font-size: 64px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 5px;
+    width: 90px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.1);
+  }
+  
+  input:hover, select:hover {
+    transform: scale(1.05);
+    border-color: #0056b3;
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+  }
+  
+  .manual-timer, .predefined-timer {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-top: 30px;
+  }
+  
+  .progress-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0%, #eaeaea 0%);
+    position: relative;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  }
+  
+  #progressCircle {
+    transition: background 0.5s ease;
+  }
+
+  /* New Red Corner Effect for Time's Up */
+.red-corners {
+  box-shadow: inset 0px 0px 50px 20px rgba(255, 0, 0, 0.7);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+  

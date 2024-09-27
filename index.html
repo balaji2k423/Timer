@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Enhanced Timer</h1>
+    
+    <!-- Display the timer -->
+    <div id="display">
+      00:00:00
+    </div>
+
+    <!-- Circular progress bar -->
+    <div class="progress-circle" id="progressCircle"></div>
+
+    <!-- Set timer manually -->
+    <div class="manual-timer">
+      <h3>Custom Timer</h3>
+      <input type="number" id="hours" value="0" min="0" placeholder="Hours">
+      <input type="number" id="minutes" value="0" min="0" placeholder="Minutes">
+      <input type="number" id="seconds" value="0" min="0" placeholder="Seconds">
+      <button onclick="setTimer()">Set Timer</button>
+    </div>
+
+    <!-- Predefined timer options -->
+    <div class="predefined-timer">
+      <h3>Quick Set</h3>
+      <select id="timer-options">
+        <option value="300">5 minutes</option>
+        <option value="600">10 minutes</option>
+        <option value="900">15 minutes</option>
+      </select>
+      <button onclick="startPredefinedTimer()">Start</button>
+    </div>
+
+    <!-- Control buttons -->
+    <div class="controls">
+      <button id="startBtn" onclick="startTimer()">Start</button>
+      <button id="pauseBtn" onclick="pauseTimer()">Pause</button>
+      <button id="resetBtn" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <!-- Sound alert -->
+  <audio id="alertSound" src="alert.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
